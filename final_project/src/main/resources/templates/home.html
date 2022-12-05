@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="data:image/png;base64,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"
+                    alt="Logo">
+            </div>
+            <div class="menu">
+                <div class="menu_div our_products">
+                    <a href="home.html">Our Products</a>
+                </div>
+                <div class="menu_div purchase_history"><a href="purchase_history.html">Purchase History</a></div>
+                <div class="menu_div balance"><a href="balance.html">My Balance</a></div>
+                <div class="menu_div my_cart"><a href="my_cart.html">My Cart</a></div>
+                <div class="menu_div sign_out"><a href="login.html">Sign out</a></div>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="content_image_wide">
+            <img class="content_image_wide_img"
+                src="https://images.wallpaperscraft.com/image/single/ocean_surf_foam_sea_water_117846_2560x1440.jpg"
+                alt="Image">
+            <div class="box">
+                <div class="content_image_wide_text1">FACE & BODY SKIN CARE</div>
+                <div class="content_image_wide_text2">Pioneering the latest in dermatology and skincare science, La
+                    Roche-Posay offers a range of face and
+                    body skin care products formulated with safe and effective ingredients.</div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/effaclar/effaclar-cleansing-foaming-gel/la-roche-posay-face-cleanser-effaclar-cleansing-foaming-gel-200ml-3337872411083-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Cleansing foaming gel</div>
+                            <div class="price">20$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/lipikar/lipikar-huile-lavante-ap-plus/larocheposay-productpage-eczema-lipikar-cleansing-oil-ap-400ml-3337875656764-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Cleansing Oil</div>
+                            <div class="price">23$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/effaclar/effaclar-micro-peeling-purifying-gel/larocheposay-product-acne-effaclar-purifyinggel-200ml-3337872411991-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Piling gel</div>
+                            <div class="price">30$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/effaclar/effaclar-micellar-water/la-roche-posay-face-cleanser-effaclar-micellar-water-ultra-400ml-3337872412516-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Micellar water</div>
+                            <div class="price">18$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/effaclar/effaclar-h/cleansing-cream/la-roche-posay-face-cleanser-effaclar-h-cleansing-cream-200ml-3337875398961-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Face cream</div>
+                            <div class="price">20$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/effaclar/effaclar-duo-plus/larocheposayfacecareeffaclarduo40ml3337875598071front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Effaclar Duo+</div>
+                            <div class="price">14$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/effaclar/effaclar-mat/la-roche-posay-face-care-effaclar-mat-sebo-controlling-moisturizer-40ml-3337872413025-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Mosturizer cream</div>
+                            <div class="price">23$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/redermic/c10/la-roche-posay-productpage-anti-aging-pure-vitamin-c10-30ml-3337875660570-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Pure Vitamin C</div>
+                            <div class="price">36$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/toleriane/dermallergo-01-neurosensine-serum/larocheposay-product-allergic-toleriane-ultradermallergo-20ml-3337875693820-fss-1.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Ultra Derallergo cream</div>
+                            <div class="price">55$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/toleriane/ultra/la-roche-posay-productpage-sensitive-allergic-toleriane-ultra-40ml-3337872412486-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Ultra cream</div>
+                            <div class="price">27$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/toleriane/ultra-nuit/larocheposay-skin-care-toleriane-ultra-nuit-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Ultra cream night</div>
+                            <div class="price">27$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/toleriane/ultra-eye-contour/la-roche-posay-productpage-sensitive-allergic-toleriane-ultra-eye-contour-20ml-3337872419522-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Ultra eyes cream</div>
+                            <div class="price">16$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/anthelios/comfort-lotion-spf30/la-roche-posay-productpage-sun-anthelios-smooth-lotion-spf30-100ml-3337875549684-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">BAH SPF 50+</div>
+                            <div class="price">30$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/anthelios/shaka-fluid/shaka-fluid-spf50-plus-non-perfumed/la-roche-posay-productpage-sun-anthelios-shaka-fluid-spf50-50ml-fragrance-free-30162662-front.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Anthelios fluid SPF</div>
+                            <div class="price">34$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product_image_div">
+                    <img class="product_image"
+                        src="https://www.laroche-posay.ua/-/media/project/loreal/brand-sites/lrp/emea/ua/products/anthelios/anthelios-invisible-spray-spf30/anthelios-spray-invisible-spf30-200ml_fss.png"
+                        alt="">
+                </div>
+                <div class="product_text_div">
+                    <div class="product_text">
+                        <div class="text_price">
+                            <div class="text">Spray SPF</div>
+                            <div class="price">13$</div>
+                        </div>
+                        <div class="login_button_home">
+                            <div class="login_button">
+                                <a href="./home.html" class='btn-login btn-login_home'>Add to my cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <p class="text-footer">© 2022 La Roche Posay All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

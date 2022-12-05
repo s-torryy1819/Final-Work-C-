@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
+    <style>
+        body {
+            background-color: #136a8a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login_image_div">
+            <img class="login_image" src="https://i.pinimg.com/564x/00/da/df/00dadfca4fd3245170b0d6ee9972a892.jpg"
+                alt="Image">
+        </div>
+        <div class="content_login">
+            <section class='login' id='login'>
+                <div class="login_content_div">
+                    <div class="login_content">
+                        <div class='head'>
+                            <h1 class='company'>LA ROCHE-POSAY</h1>
+                        </div>
+                        <p class='msg'>Welcome back</p>
+                        <div class='form'>
+                            <form>
+                                <input type="text" placeholder='Username' class='text' id='username' required><br>
+                                <input type="password" placeholder='••••••••••••••' class='password' required><br>
+                                <div class="login_button">
+                                    <a href="./home.html" onclick="login_with_username()" class='btn-login'
+                                        id='do-login'>Login</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
