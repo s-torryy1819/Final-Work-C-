@@ -60,7 +60,6 @@ namespace final_project.src.main.online_shop
                         case 10: buyProduct(productList[9], user); break;
                         case 11: buyProduct(productList[10], user); break;
                     }
-                    shoppingBasket.clearBasket();
                 }
             }
             else if (choice == "ADD")
